@@ -1,6 +1,6 @@
 cask "smartwindow" do
-  version "0.1.2"
-  sha256 "33833544a366f79194f59dacf5020f2ff512e62ef845d6656a88ab03394606d0"
+  version "0.1.3"
+  sha256 "16b1b706546cf8ab5cab7bb2cfc58acd2377aa5ce98f1a381f7692b7c1ee4db0"
 
   url "https://github.com/kevnnard/smart-window/releases/download/v#{version}/SmartWindow.zip"
   name "SmartWindow"
