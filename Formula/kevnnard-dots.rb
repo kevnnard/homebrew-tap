@@ -1,9 +1,9 @@
 class KevnnardDots < Formula
   desc "Cross-platform dotfiles manager, backup engine and machine provisioner"
   homepage "https://github.com/kevnnard/dots"
-  url "https://codeload.github.com/kevnnard/dots/tar.gz/refs/tags/v1.8.0"
-  version "1.8.0"
-  sha256 "735aee7a77ef1d54cabcd3c0cb17fc1f2bd130a2f31732b61aa7b4c2f464953f"
+  url "https://codeload.github.com/kevnnard/dots/tar.gz/refs/tags/v1.9.0"
+  version "1.9.0"
+  sha256 "208654124ed929fb8d16d131cd242788f1ac4e7915b3f8675b72ae27c825b92e"
   head "https://github.com/kevnnard/dots.git", branch: "main"
 
   depends_on "go" => :build
