@@ -1,9 +1,9 @@
 class EnglishTeacher < Formula
   desc "Personal English teacher in the terminal: spaced review, reading, writing, role-plays"
   homepage "https://github.com/kevnnard/english-teacher"
-  url "https://codeload.github.com/kevnnard/english-teacher/tar.gz/refs/tags/v0.2.0"
-  version "0.2.0"
-  sha256 "fcdf9da380f2a4026e42f4c4b5979870e5bdd539c0b254a6fad107bcd75763f0"
+  url "https://codeload.github.com/kevnnard/english-teacher/tar.gz/refs/tags/v0.3.0"
+  version "0.3.0"
+  sha256 "a2dc7a09e64048a9c7c7d65267a779940a8d39cd904bfb85ed44933534514f1f"
   license "PolyForm-Strict-1.0.0"
   head "https://github.com/kevnnard/english-teacher.git", branch: "main"
 
