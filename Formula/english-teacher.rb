@@ -1,9 +1,9 @@
 class EnglishTeacher < Formula
   desc "Personal English teacher in the terminal: spaced review, reading, writing, role-plays"
   homepage "https://github.com/kevnnard/english-teacher"
-  url "https://codeload.github.com/kevnnard/english-teacher/tar.gz/refs/tags/v0.1.0"
-  version "0.1.0"
-  sha256 "19152e9f56eb464856c009c0b01a4abd36768c9e4f26f3bdbd7ffc380dc806a2"
+  url "https://codeload.github.com/kevnnard/english-teacher/tar.gz/refs/tags/v0.2.0"
+  version "0.2.0"
+  sha256 "fcdf9da380f2a4026e42f4c4b5979870e5bdd539c0b254a6fad107bcd75763f0"
   license "PolyForm-Strict-1.0.0"
   head "https://github.com/kevnnard/english-teacher.git", branch: "main"
 
@@ -19,6 +19,11 @@ class EnglishTeacher < Formula
       Review, Fluency and the vocabulary quiz work offline.
       Learn, Write, Talk and the grammar quiz use the `pi` CLI (Gentle Shell);
       see `teacher models`.
+
+      Audio is optional and runs locally: Listen, Pairs, Speak and Talk by
+      voice need Piper (`uv tool install piper-tts`, then `teacher setup voice`);
+      Speak and Talk by voice also need whisper.cpp (`brew install whisper-cpp`,
+      then `teacher setup whisper`). `teacher doctor` shows what is found.
     EOS
   end
 
