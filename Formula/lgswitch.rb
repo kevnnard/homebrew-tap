@@ -1,16 +1,17 @@
 class Lgswitch < Formula
-  desc "Switch an LG ultrawide's input between a Mac, a Linux PC and a PS5"
+  desc "Switch an LG ultrawide's input (Mac, Linux PC, PS5) and the Mac's sound output"
   homepage "https://github.com/kevnnard/lgswitch"
-  url "https://codeload.github.com/kevnnard/lgswitch/tar.gz/refs/tags/v0.1.0"
-  version "0.1.0"
-  sha256 "6790b878aeb96b18571c77bcfa8d110bbc67e239ceb2412d7ce66b65d2a9f4d0"
+  url "https://codeload.github.com/kevnnard/lgswitch/tar.gz/refs/tags/v0.2.0"
+  version "0.2.0"
+  sha256 "e41b39ca01b401a6efd14b8ce4ea580e21a5c7b8e137857928761a474407508d"
   license "PolyForm-Strict-1.0.0"
   head "https://github.com/kevnnard/lgswitch.git", branch: "main"
 
   depends_on "go" => :build
 
   def install
-    # The macOS hotkey daemon (`lgswitch daemon`) uses Carbon through cgo.
+    # The macOS hotkey daemon (`lgswitch daemon`) uses Carbon and
+    # `lgswitch audio` uses CoreAudio, both through cgo.
     # Linux needs no cgo.
     ENV["CGO_ENABLED"] = OS.mac? ? "1" : "0"
     ldflags = "-s -w -X main.version=#{version}"
@@ -24,7 +25,8 @@ class Lgswitch < Formula
         lgswitch switches the monitor with m1ddc. Install it with:
           brew install m1ddc
 
-        Start the Cmd+F1/F2/F3 hotkey daemon at login with:
+        Start the hotkey daemon (Cmd+F1/F2/F3 monitor,
+        Cmd+Opt+F1-F4 audio) at login with:
           lgswitch install
       EOS
     else
