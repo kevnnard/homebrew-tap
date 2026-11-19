@@ -1,6 +1,6 @@
 cask "calls-ai" do
-  version "0.1.6"
-  sha256 "aa845859e4270bfd73c30104d5dada593b5d6960a8cfd2db1da40a28f8efd987"
+  version "0.1.7"
+  sha256 "a55d75ce5ad7748b8e3f2db245f40d0d8c975a8f1e67276bab47f732c67f9db6"
 
   url "https://github.com/kevnnard/calls-ai/releases/download/v#{version}/CallsAI.zip"
   name "Calls AI"
